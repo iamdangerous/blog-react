@@ -3,6 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
+import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
+import Home from "./components/home/Home";
+
 
 class App extends Component {
 
@@ -10,15 +14,10 @@ class App extends Component {
     return (
         <Router>
             <div>
-              <ul>
-                <li><Link to="/">Home</Link></li>
-                  <li><Link to="/about">About</Link></li>
-                  <li><Link to="/contact">Contact</Link></li>
-              </ul>
                 <Switch>
-                    <Route path="/" exact component={Index} />
+                    <Route path="/" exact component={Home} />
                     <Route path="/about" exact component={About} />
-                    <Route path="/contact" exact component={Users} />
+                    <Route path="/contact" exact component={Contact} />
                 </Switch>
 
             </div>
@@ -27,8 +26,5 @@ class App extends Component {
     );
   }
 }
-const Index = () => <h2>Home</h2>;
-const About = () => <h2>About</h2>;
-const Users = () => <h2>Users</h2>;
 
 export default App;
