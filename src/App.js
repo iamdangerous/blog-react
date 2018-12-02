@@ -10,7 +10,16 @@ import Home from "./components/home/Home";
 
 class App extends Component {
 
-  render() {
+    state = {
+        count:10
+    };
+
+    componentWillMount() {
+        this.setState({count:2});
+        console.log(this.state.count)
+    }
+
+    render() {
     return (
         <Router>
             <div>

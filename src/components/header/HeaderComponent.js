@@ -11,11 +11,6 @@ export default class HeaderComponent extends React.Component {
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
-                <style jsx global>{`
-      body {
-        margin: 0px;
-      }
-    `}</style>
             </div>
         )
     }
