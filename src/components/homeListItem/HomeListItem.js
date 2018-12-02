@@ -13,8 +13,13 @@ export default class HomeListItem extends React.Component {
         return (
                 <div className={classes.HomeListItem}>
                     <h3>{this.props.post.title}</h3>
-                    {/*<Link as = {`/p/${this.props.post._id}`} href={`/post?id=${this.props.post._id}`}><a>{this.props.post.subTitle}</a></Link>*/}
-                    <Link to={`/p/${this.props.post._id}`}>{this.props.post.subTitle}</Link>
+                    <Link
+                        to = {{
+                            pathname:`/p/${this.props.post._id}`,
+                            state:{post:this.props.post}
+                        }}>
+                        {this.props.post.subTitle}
+                        </Link>
                     <p>{this.props.post.createdAt}</p>
                 </div>
         )

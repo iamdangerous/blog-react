@@ -13,7 +13,6 @@ class HomeBody extends Component {
 
 
     componentDidMount() {
-        console.log(this);
         axios.get(GET_POSTS_URL)
             .then( (response)=> {
                 this.setState({
