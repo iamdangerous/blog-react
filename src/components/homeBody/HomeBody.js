@@ -1,4 +1,4 @@
-import classes from './HomeBody.scss';
+import classes from './HomeBody.css';
 import React from 'react';
 import HomeListItem from "../homeListItem/HomeListItem";
 // import {GET_POSTS_URL} from "../../../Constants";

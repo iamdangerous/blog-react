@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './HomeListItem.scss';
+import classes from './HomeListItem.css';
 import {Link} from "react-router-dom";
 // import PostDetail from "../postDetail/PostDetail";
 

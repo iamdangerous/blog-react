@@ -1,5 +1,5 @@
 import React from 'react';
-// import classes from './PostDetail.scss';
+// import classes from './PostDetail.css';
 
 export default class PostDetail extends React.Component{
     render() {
