@@ -4,18 +4,6 @@ import {Link} from "react-router-dom";
 
 export default class HeaderComponent extends React.Component {
     render() {
-
-        const ulStyle = {
-            listStyleType: 'none',
-            margin: '0px',
-            padding: '0px',
-            overflow: 'hidden',
-            backgroundColor: '#333'
-        };
-
-        const liStyle = {
-            float:'left'
-        };
         return (
             <div className={classes.Header}>
                 <ul>
