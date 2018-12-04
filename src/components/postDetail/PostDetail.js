@@ -2,6 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import ReactMarkdown from 'react-markdown';
 import ReactMd from 'react-md-file';
+import HeaderComponent from "../header/HeaderComponent";
+import classes from "./PostDetail.css"
 
 
 export default class PostDetail extends React.Component {
@@ -31,7 +33,7 @@ export default class PostDetail extends React.Component {
             mdPost = (
                 <div>
                     {
-                        <ReactMd markdown={this.state.mdText}/>
+                        <ReactMarkdown source={this.state.mdText}/>
                     }
                 </div>
             )
@@ -44,10 +46,13 @@ export default class PostDetail extends React.Component {
 
 
         return(
-            <div style={inlineStyle}>
-                <p>This is a post</p>
-                {mdPost}
+            <div>
+                <HeaderComponent/>
+                <div  className={classes.PostDetail}>
+                    {mdPost}
+                </div>
             </div>
+
         )
     }
 }

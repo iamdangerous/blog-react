@@ -1,3 +1,8 @@
-.PostDetail{
-    margin: 40px;
+.PostDetail {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.PostDetail h1{
+    text-align: center;
 }
