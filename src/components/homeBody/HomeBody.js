@@ -42,15 +42,6 @@ class HomeBody extends Component {
         return (
             <div >
                 {posts}
-                {/*<ul>*/}
-                {
-                    // props.posts.map((post) => (
-                    //     <li key={post._id} style={{listStyleType: 'none'}}>
-                    //         <HomeListItem post = {post}/>
-                    //     </li>
-                    // ))
-                }
-                {/*</ul>*/}
             </div>
         )
     }

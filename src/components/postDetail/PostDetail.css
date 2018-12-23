@@ -6,3 +6,12 @@
 .PostDetail h1{
     text-align: center;
 }
+
+.PostDetail pre{
+    background: rgba(0,0,0,.05);
+    padding: 20px;
+    white-space: pre-wrap;
+    font-family: sans-serif;
+    font-size: 14px;
+    display: block;
+}
