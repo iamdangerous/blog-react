@@ -1,6 +1,7 @@
 import React from "react";
 import classes from './About.css';
 import { SocialIcon } from 'react-social-icons';
+import HeaderComponent from "../header/HeaderComponent";
 
 const About = (props)=>{
     const spanStyle = {
@@ -17,7 +18,7 @@ const About = (props)=>{
 
     return (
         <div className = {classes.About}>
-            
+             <HeaderComponent/>
             <div className = {classes.AboutNameContainer}>
                 <p className = {classes.title}>Hi!</p>
                 <p className = {classes.name}><span style={spanStyle}>I'm Rahul</span> Lohra!</p>
