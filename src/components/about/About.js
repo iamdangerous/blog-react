@@ -5,6 +5,10 @@ const About = (props)=>{
     const spanStyle = {
         color: '#53f6c7'
       };
+
+      const aStyle = {
+        color: '#EEEEEE'
+      }
     return (
         <div className = {classes.About}>
             
@@ -16,7 +20,12 @@ const About = (props)=>{
                     <li>Ios Developer</li>
                     <li>Backend Developer</li>
                 </ul>
+
+                <div>
+                    <a href="http://www.website.com" title="Website name"><i style= {aStyle}></i>Website Link</a>
+                </div>
             </div>
+            
             
         </div>
         
