@@ -14,7 +14,7 @@ const About = (props)=>{
         marginRight:10
       }
 
-      const RESUME_URL = "https://drive.google.com/open?id=1_O-d5Pwmo_mtqzvp-BEi_Pb-T_zFfprO"
+      const RESUME_URL = "https://drive.google.com/open?id=1HCYVYZBA1p9gg8tZTq47xNfTXhBz1ahl"
 
     return (
         <div className = {classes.About}>
