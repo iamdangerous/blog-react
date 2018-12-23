@@ -17,14 +17,13 @@ const About = (props)=>{
         marginRight:10
       }
 
-      const ulSocialIconStyle = {
-        display: 'inline'
-      }
+      const RESUME_URL = "https://drive.google.com/open?id=1_O-d5Pwmo_mtqzvp-BEi_Pb-T_zFfprO"
+
     return (
         <div className = {classes.About}>
             
             <div className = {classes.AboutNameContainer}>
-                <p className = {classes.title}>Hello!</p>
+                <p className = {classes.title}>Hi!</p>
                 <p className = {classes.name}><span style={spanStyle}>I'm Rahul</span> Lohra!</p>
                 <ul>
                     <li>Android Developer</li>
@@ -37,9 +36,12 @@ const About = (props)=>{
                     <SocialIcon url="https://www.linkedin.com/in/rahullohra/"  style={socialIconStyle} />
                     <SocialIcon url="https://github.com/iamdangerous" color="#A93226" style={socialIconStyle} />                            
                 </div>
+
+                <div>                    
+                    <a style = {classes.resumeStyle} href={RESUME_URL} target="_" ><button>Download CV</button></a>                                
+                </div>
             </div>
-            
-            
+                    
         </div>
         
     )
