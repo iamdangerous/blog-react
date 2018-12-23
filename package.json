@@ -121,5 +121,7 @@
       "react-app"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "react-social-icons": "^3.1.0"
+  }
 }

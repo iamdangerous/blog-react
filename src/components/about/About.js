@@ -1,5 +1,6 @@
 import React from "react";
 import classes from './About.css';
+import { SocialIcon } from 'react-social-icons';
 
 const About = (props)=>{
     const spanStyle = {
@@ -8,6 +9,16 @@ const About = (props)=>{
 
       const aStyle = {
         color: '#EEEEEE'
+      }
+
+      const socialIconStyle = {
+        height: 40,
+        width: 40,
+        marginRight:10
+      }
+
+      const ulSocialIconStyle = {
+        display: 'inline'
       }
     return (
         <div className = {classes.About}>
@@ -22,7 +33,9 @@ const About = (props)=>{
                 </ul>
 
                 <div>
-                    <a href="http://www.website.com" title="Website name"><i style= {aStyle}></i>Website Link</a>
+                    <SocialIcon url="http://twitter.com/rahul_lohra"  color="#38A1F3" style={socialIconStyle} />
+                    <SocialIcon url="https://www.linkedin.com/in/rahullohra/"  style={socialIconStyle} />
+                    <SocialIcon url="https://github.com/iamdangerous" color="#A93226" style={socialIconStyle} />                            
                 </div>
             </div>
             
