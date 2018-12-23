@@ -1,0 +1,39 @@
+.AboutNameContainer {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 300px;
+    display: block;
+    color: azure;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.About {
+    margin-top: -30px;
+}
+
+
+.About h3{
+    padding: 0px;
+    background-color: white;
+    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
+}
+.About p{
+    
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.name{
+    margin: 0;
+    padding: 0;
+    padding: 0px;
+    font-size: 56px;
+}
