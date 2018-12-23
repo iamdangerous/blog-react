@@ -7,10 +7,6 @@ const About = (props)=>{
         color: '#53f6c7'
       };
 
-      const aStyle = {
-        color: '#EEEEEE'
-      }
-
       const socialIconStyle = {
         height: 40,
         width: 40,
@@ -25,7 +21,7 @@ const About = (props)=>{
             <div className = {classes.AboutNameContainer}>
                 <p className = {classes.title}>Hi!</p>
                 <p className = {classes.name}><span style={spanStyle}>I'm Rahul</span> Lohra!</p>
-                <ul>
+                <ul style={{color:'white'}}>
                     <li>Android Developer</li>
                     <li>Ios Developer</li>
                     <li>Backend Developer</li>
