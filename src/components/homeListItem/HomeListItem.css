@@ -5,6 +5,7 @@
     background:white;
     border-radius: 5px;
     display: block;
+    margin-top: 20px;
 }
 
 .HomeListItem h3{
@@ -13,7 +14,7 @@
     font-style: normal;
     font-weight: bold;
     line-height: normal;
-    font-size: 16px;
+    font-size: 20px;
     color: black;
     margin: 0px;
 }
@@ -23,7 +24,7 @@
     font-style: normal;
     font-weight: normal;
     line-height: normal;
-    font-size: 11px;
+    font-size: 12px;
     color: #7C7272;
     margin-top: 10px;
 }
