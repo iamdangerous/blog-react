@@ -40,7 +40,7 @@ class HomeBody extends Component {
         }
 
         return (
-            <div >
+            <div style={{marginTop:'20px'}}>
                 {posts}
             </div>
         )

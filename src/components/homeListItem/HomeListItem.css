@@ -1,14 +1,29 @@
 .HomeListItem {
     margin-left: 100px;
     margin-right: 100px;
+    height: 103px;
+    background:white;
+    border-radius: 5px;
     display: block;
 }
 
 .HomeListItem h3{
     padding: 0px;
-    background-color: white;
-    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
-}
-.HomeListItem p{
     font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16px;
+    color: black;
+    margin: 0px;
+}
+
+.HomeListItem p {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 11px;
+    color: #7C7272;
+    margin-top: 10px;
 }
