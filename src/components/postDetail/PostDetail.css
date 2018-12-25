@@ -8,10 +8,22 @@
 }
 
 .PostDetail pre{
-    background: rgba(0,0,0,.05);
+    background: #333;
+    border-radius: 5px;
     padding: 20px;
     white-space: pre-wrap;
     font-family: sans-serif;
     font-size: 14px;
     display: block;
+    color: rgb(253, 253, 253);
+}
+
+.Clipboard {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.MyCode {
+    margin-top: -40px;
 }
