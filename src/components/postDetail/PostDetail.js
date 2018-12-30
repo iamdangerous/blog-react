@@ -41,7 +41,7 @@ export default class PostDetail extends React.Component {
             axios.get(url)
                 .then(res =>{
                     console.log(res.data[0])
-                    this.postItem = mState.res.data[0]
+                    this.postItem = res.data[0]
                     this.getMdText(res.data[0].filePath)
                 }).catch(ex=>{
                     console.log(ex)
