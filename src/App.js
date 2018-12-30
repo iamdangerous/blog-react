@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
@@ -10,15 +9,6 @@ import PostDetail from "./components/postDetail/PostDetail";
 
 
 class App extends Component {
-
-    state = {
-        count:10
-    };
-
-    componentWillMount() {
-        this.setState({count:2});
-        console.log(this.state.count)
-    }
 
     render() {
     return (
