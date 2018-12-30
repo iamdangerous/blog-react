@@ -14,9 +14,10 @@ export default class PostDetail extends React.Component {
 
     state = {
         mdText:"",
-        showMdText:false,
-        postItem:null
+        showMdText:false
     };
+    
+    postItem = null
 
     getMdText(fileUrl){
         console.log("getMdText url:"+fileUrl)
@@ -40,14 +41,14 @@ export default class PostDetail extends React.Component {
             axios.get(url)
                 .then(res =>{
                     console.log(res.data[0])
-                    this.state.postItem = mState.res.data[0]
+                    this.postItem = mState.res.data[0]
                     this.getMdText(res.data[0].filePath)
                 }).catch(ex=>{
                     console.log(ex)
                 })
         }else {
             var fileUrl = mState.post.filePath;
-            this.state.postItem = mState.post            
+            this.postItem = mState.post            
             this.getMdText(fileUrl)
         }
     }
@@ -75,14 +76,14 @@ export default class PostDetail extends React.Component {
 
             const pathName = (this.props.location.pathname);
             const disqusUrl = BASE_URL+"/p/"+pathName.slice(3) 
-            console.log(this.state.postItem)
+            console.log(this.postItem)
             console.log(disqusUrl)
 
             
             disqusConfig = {
                 url: disqusUrl,
-                identifier: this.state.postItem._id,
-                title: this.state.postItem.title
+                identifier: this.postItem._id,
+                title: this.postItem.title
             };
 
             disqusComment = (

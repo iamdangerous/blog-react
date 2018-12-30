@@ -4,12 +4,7 @@ import {Link} from "react-router-dom";
 import {monthNames} from "../../util/Constants";
 
 export default class HomeListItem extends React.Component {
-    componentDidMount() {
-        const id = this.props.post._id;
-        console.log(id)
-    }
-
-
+    
     render() {
 
         function getFormattedText(post){
